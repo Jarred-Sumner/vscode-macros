@@ -1,0 +1,29 @@
+{
+  "name": "macros",
+  "displayName": "Macros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/extension.js",
+  "scripts": {
+    "build": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "activationEvents": [
+    "*"
+  ],
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "@types/vscode": "^1.55.0",
+    "change-case": "^4.1.2",
+    "esbuild": "^0.11.11"
+  },
+  "dependencies": {
+    "@hediet/node-reload": "^0.7.3",
+    "@hediet/std": "^0.6.0"
+  }
+}
