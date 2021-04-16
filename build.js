@@ -4,6 +4,7 @@ esbuild.build({
   entryPoints: ["./src/index.ts"],
   outdir: "dist",
   platform: "node",
+  sourcemap: "external",
   target: "esnext",
   format: "cjs",
   logLevel: "info",
@@ -16,6 +17,7 @@ esbuild.build({
 esbuild.build({
   bundle: true,
   incremental: true,
+  sourcemap: "external",
   watch: true,
   entryPoints: ["./src/extension.ts"],
   outdir: "dist",

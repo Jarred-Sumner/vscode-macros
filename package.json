@@ -12,6 +12,30 @@
   "activationEvents": [
     "*"
   ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "macros.go2v.rune.selection",
+        "title": "go2v: convert runes in selection"
+      },
+      {
+        "command": "macros.go2v.rune.document",
+        "title": "go2v: convert runes in document"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "macros.go2v.rune.selection",
+          "when": "editorLangId == go"
+        },
+        {
+          "command": "macros.go2v.rune.document",
+          "when": "editorLangId == go"
+        }
+      ]
+    }
+  },
   "engines": {
     "vscode": "^1.0.0"
   },

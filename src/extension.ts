@@ -15,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
       // or one of its dependencies changes.
       // We simply instantiate our extension again on every change.
       // `dispose` is called on previously returned instances.
-      return new logic.Extension();
+      return new logic.Extension(context);
     })
   );
 }

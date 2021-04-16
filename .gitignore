@@ -1,3 +1,14 @@
 node_modules
 dist
 pnpm-lock.yaml
+src/go-parser.ts
+src/GoLexer.g4
+src/GoLexer.interp
+src/GoLexer.tokens
+src/GoLexer.ts
+src/GoParser.g4
+src/GoParser.interp
+src/GoParser.tokens
+src/GoParser.ts
+src/GoParserListener.ts
+src/GoParserVisitor.ts
